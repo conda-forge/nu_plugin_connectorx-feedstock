@@ -18,6 +18,7 @@ build:
         if [[ "${target_platform}" == linux-* ]]; then
           export BINDGEN_EXTRA_CLANG_ARGS="$CFLAGS"
         fi
+        export PKG_CONFIG=$BUILD_PREFIX/bin/pkg-config
         cargo-bundle-licenses --format yaml --output ${SRC_DIR}/THIRDPARTY.yml
         cargo auditable install --locked --no-track --path . --root ${PREFIX}
       else: |
@@ -41,7 +42,8 @@ requirements:
   - if: linux
     then:
     - openssl
-    - krb5-static
+    # - krb5-static
+    - krb5
     - zlib
 tests:
 - script:
