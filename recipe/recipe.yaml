@@ -1,11 +1,11 @@
 context:
-  version: "0.2.0"
+  version: "0.3.0"
 package:
   name: nu_plugin_connectorx
   version: ${{ version }}
 source:
   url: https://github.com/VasanthakumarV/nu_plugin_connectorx/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 7c046cb6c44716be9ad7e59c7092e266f62c5da6057ef779a968418c8a66d941
+  sha256: a10523d81a43ec5430cb8f0c66fa8e408648a1268f63fe00f9539a0d05962bc2
 build:
   number: 0
   script:
