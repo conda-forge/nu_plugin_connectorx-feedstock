@@ -7,7 +7,7 @@ source:
   url: https://github.com/VasanthakumarV/nu_plugin_connectorx/archive/refs/tags/v${{ version }}.tar.gz
   sha256: f2833ddf3999f1363011116d59b879836c9a2adabba8a5461ceccb3784e98d0e
 build:
-  number: 0
+  number: 1
   script:
     env:
       CARGO_PROFILE_RELEASE_STRIP: symbols
